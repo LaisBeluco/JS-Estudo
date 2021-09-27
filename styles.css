@@ -1,9 +1,13 @@
-*{
-    width: 0;
+*{ 
+    margin: 0;
     padding: 0;
 }
+/*General sibling selector*/
+.pai h1~p{
+    color: red;
+}
 
-h1{
-   background: black;
-
+/*Adjacent sibling combinator*/
+.pai p+h1{
+    color: yellow;
 }
