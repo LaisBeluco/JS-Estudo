@@ -1,18 +1,11 @@
-*{ 
+*{
     margin: 0;
     padding: 0;
 }
-/*General sibling selector*/
-.pai p~h1{
-    color: red;
+.heading{
+    transition: all 1s ease-in-out;
 }
-
-/*Adjacent sibling combinator*/
-.pai p+h1{
-    color: yellow;
-}
-/*Há vários seletores de atributos, como o "^" que seleciona qualquer palavra ou caracter que está no inicio do atributo; "*" seleciona qualquer letra que está no atributo; "$" seleciona palavras que estão no final do seu atributo, entre outras...*/
-[meu-atributo ^="valor"]{
-    font-style: italic;
-    color: purple;
+.heading:hover
+{
+    background: purple;
 }
